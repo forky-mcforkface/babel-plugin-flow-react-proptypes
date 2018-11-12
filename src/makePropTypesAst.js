@@ -1,6 +1,6 @@
 import {$debug, makeLiteral, PLUGIN_NAME} from './util';
-import * as t from 'babel-types';
-import template from 'babel-template';
+import * as t from '@babel/types';
+import template from '@babel/template';
 
 function makePropTypeImportNode() {
   return t.callExpression(t.identifier('require'), [makeLiteral('prop-types')]);
@@ -19,7 +19,7 @@ const dontSetTemplate = template(`
 
 const exactTemplate = template(`
 (values, prop, displayName) => {
-  var props = $props$;
+  var props = PROPS;
   var extra = [];
   for (var k in values) {
     if (values.hasOwnProperty(k) && !props.hasOwnProperty(k)) {
@@ -30,7 +30,7 @@ const exactTemplate = template(`
     return new Error('Invalid additional prop(s) ' + JSON.stringify(extra));
   }
 }
-`);
+`, { placeholderPattern: /^PROPS$/ });
 
 const anyTemplate = template(`
 (props, propName, componentName) => {
@@ -326,7 +326,7 @@ function makePropType(data, isExact) {
         t.objectProperty(
           t.identifier('__exact__'),
           exactTemplate({
-            '$props$': t.objectExpression(data.properties.map(({key}) => t.objectProperty(t.identifier(key), t.booleanLiteral(true))))
+            'PROPS': t.objectExpression(data.properties.map(({key}) => t.objectProperty(t.identifier(key), t.booleanLiteral(true))))
           }).expression
         )
       );

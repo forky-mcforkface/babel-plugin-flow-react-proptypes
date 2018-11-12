@@ -12,10 +12,10 @@ class C extends React.Component<Props> {
 it('use-static-rn', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['react-native', 'react-native/configs/hmr.js'],
-    plugins: ['syntax-flow', [require('../'), { useStatic: true }]],
+    presets: ['module:metro-react-native-babel-preset'],
+    plugins: [[require('../'), { useStatic: true }]],
     compact: false,
   }).code;
+  expect(res).toMatch(/C\.propTypes/g);
   expect(res).toMatchSnapshot();
-  expect(res).toMatch(/_class\.propTypes/g);
 });

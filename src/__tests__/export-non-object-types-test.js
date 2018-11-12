@@ -1,13 +1,13 @@
-const babel = require('babel-core');
+const babel = require("babel-core");
 const content = `
 export type Answer = "Yes" | "No";
 `;
 
-it('export-non-object-types', () => {
+it("export-non-object-types", () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
-    plugins: ['syntax-flow', require('../')],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
+    plugins: [ "@babel/syntax-flow", require("../")]
   }).code;
   expect(res).toMatchSnapshot();
 });

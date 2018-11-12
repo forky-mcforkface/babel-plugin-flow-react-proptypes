@@ -6,15 +6,13 @@ exports[`export-non-object-types 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.bpfrpt_proptype_Answer = undefined;
+exports.bpfrpt_proptype_Answer = void 0;
 
-var _propTypes = require(\\"prop-types\\");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var bpfrpt_proptype_Answer = _propTypes2.default.oneOf([\\"Yes\\", \\"No\\"]);
+var bpfrpt_proptype_Answer = _propTypes.default.oneOf([\\"Yes\\", \\"No\\"]);
 
 exports.bpfrpt_proptype_Answer = bpfrpt_proptype_Answer;"
 `;

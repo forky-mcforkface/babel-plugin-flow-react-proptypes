@@ -13,8 +13,12 @@ const C = (props: T) => {
 it('stateless-inline-imports', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
-    plugins: ['syntax-flow', require('../')],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
+    plugins: [
+      '@babel/syntax-flow',
+      require('../'),
+      "@babel/plugin-proposal-class-properties"
+    ],
   }).code;
   expect(res).toMatchSnapshot();
 });

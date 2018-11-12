@@ -1,51 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`import-and-loops 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
-    value: true
+  value: true
 });
-exports.bpfrpt_proptype_T = undefined;
+exports.bpfrpt_proptype_T = exports.default = void 0;
 
-var _react = require('react');
+var _react = _interopRequireDefault(require(\\"react\\"));
 
-var _react2 = _interopRequireDefault(_react);
+var _types = require(\\"../types\\");
 
-var _types = require('../types');
-
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var bpfrpt_proptype_T = {
-    flag: _propTypes2.default.bool.isRequired,
-    list: _propTypes2.default.arrayOf(function () {
-        return (typeof _types.bpfrpt_proptype_ExternalType === 'function' ? _types.bpfrpt_proptype_ExternalType.isRequired ? _types.bpfrpt_proptype_ExternalType.isRequired : _types.bpfrpt_proptype_ExternalType : _propTypes2.default.shape(_types.bpfrpt_proptype_ExternalType).isRequired).apply(this, arguments);
-    }).isRequired
+  flag: _propTypes.default.bool.isRequired,
+  list: _propTypes.default.arrayOf(function () {
+    return (typeof _types.bpfrpt_proptype_ExternalType === \\"function\\" ? _types.bpfrpt_proptype_ExternalType.isRequired ? _types.bpfrpt_proptype_ExternalType.isRequired : _types.bpfrpt_proptype_ExternalType : _propTypes.default.shape(_types.bpfrpt_proptype_ExternalType).isRequired).apply(this, arguments);
+  }).isRequired
 };
-
+exports.bpfrpt_proptype_T = bpfrpt_proptype_T;
 
 var C = function C(_ref) {
-    var flag = _ref.flag,
-        list = _ref.list;
-
-    return flag ? _react2.default.createElement(
-        'div',
-        null,
-        'yes'
-    ) : _react2.default.createElement(
-        Select,
-        null,
-        list.map(function (e) {
-            return _react2.default.createElement('option', { value: e.id, key: e.id });
-        })
-    );
+  var flag = _ref.flag,
+      list = _ref.list;
+  return flag ? _react.default.createElement(\\"div\\", null, \\"yes\\") : _react.default.createElement(Select, null, list.map(function (e) {
+    return _react.default.createElement(\\"option\\", {
+      value: e.id,
+      key: e.id
+    });
+  }));
 };
 
 C.propTypes = bpfrpt_proptype_T;
-exports.default = C;
-exports.bpfrpt_proptype_T = bpfrpt_proptype_T;"
+var _default = C;
+exports.default = _default;"
 `;

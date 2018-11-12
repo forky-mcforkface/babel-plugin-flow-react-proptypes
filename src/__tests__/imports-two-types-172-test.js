@@ -14,8 +14,12 @@ const C = (props: Props) => <div />;
 it('imports-two-types-172', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: [['env', { modules: false }], 'stage-1', 'react'],
-    plugins: ['syntax-flow', require('../')],
+    presets: [['@babel/env', { modules: false }], '@babel/react', '@babel/flow'],
+    plugins: [
+      '@babel/syntax-flow',
+      require('../'),
+      "@babel/plugin-proposal-class-properties"
+    ],
   }).code;
   expect(res).toMatch(/\{\s*bpfrpt_proptype_Foo/);
   expect(res).toMatch(/\{\s*bpfrpt_proptype_Bar/);

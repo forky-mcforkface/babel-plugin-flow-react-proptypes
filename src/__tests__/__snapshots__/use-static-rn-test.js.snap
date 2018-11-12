@@ -1,69 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`use-static-rn 1`] = `
-"var _react2 = require('react');
+"var _interopRequireDefault = require(\\"@babel/runtime/helpers/interopRequireDefault\\");
 
-var _react3 = _interopRequireDefault(_react2);
+var _classCallCheck2 = _interopRequireDefault(require(\\"@babel/runtime/helpers/classCallCheck\\"));
 
-var _index = require('react-transform-hmr/lib/index.js');
+var _createClass2 = _interopRequireDefault(require(\\"@babel/runtime/helpers/createClass\\"));
 
-var _index2 = _interopRequireDefault(_index);
+var _possibleConstructorReturn2 = _interopRequireDefault(require(\\"@babel/runtime/helpers/possibleConstructorReturn\\"));
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\\"value\\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _getPrototypeOf2 = _interopRequireDefault(require(\\"@babel/runtime/helpers/getPrototypeOf\\"));
 
-var _class, _temp;
+var _inherits2 = _interopRequireDefault(require(\\"@babel/runtime/helpers/inherits\\"));
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\\"Cannot call a class as a function\\"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\\"this hasn't been initialised - super() hasn't been called\\"); } return call && (typeof call === \\"object\\" || typeof call === \\"function\\") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== \\"function\\" && superClass !== null) { throw new TypeError(\\"Super expression must either be null or a function, not \\" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var _components = {
-  C: {
-    displayName: 'C'
-  }
-};
-
-var _reactTransformHmrLibIndexJs2 = (0, _index2.default)({
-  filename: 'unknown',
-  components: _components,
-  locals: [module],
-  imports: [_react3.default]
-});
-
-function _wrapComponent(id) {
-  return function (Component) {
-    return _reactTransformHmrLibIndexJs2(Component, id);
-  };
-}
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 var React = require('react');
 
-var C = _wrapComponent('C')((_temp = _class = function (_React$Component) {
-  _inherits(C, _React$Component);
+var C = function (_React$Component) {
+  (0, _inherits2.default)(C, _React$Component);
 
   function C() {
-    _classCallCheck(this, C);
-
-    return _possibleConstructorReturn(this, (C.__proto__ || Object.getPrototypeOf(C)).apply(this, arguments));
+    (0, _classCallCheck2.default)(this, C);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(C).apply(this, arguments));
   }
 
-  _createClass(C, [{
-    key: 'render',
+  (0, _createClass2.default)(C, [{
+    key: \\"render\\",
     value: function render() {
       return null;
     }
   }]);
-
   return C;
-}(React.Component), _class.propTypes = {
-  x: _propTypes2.default.string.isRequired
-}, _temp));"
+}(React.Component);
+
+C.propTypes = {
+  x: _propTypes.default.string.isRequired
+};"
 `;

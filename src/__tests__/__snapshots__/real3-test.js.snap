@@ -1,24 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`real3 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
-    value: true
+  value: true
 });
-exports.bpfrpt_proptype_JobViewImpression = undefined;
+exports.bpfrpt_proptype_JobViewImpression = void 0;
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var bpfrpt_proptype_JobViewImpression = {
-    resultId: _propTypes2.default.string,
-    listIndex: _propTypes2.default.number.isRequired,
-    searchType: _propTypes2.default.string,
-    viewSource: _propTypes2.default.string
+  resultId: _propTypes.default.string,
+  listIndex: _propTypes.default.number.isRequired,
+  searchType: _propTypes.default.string,
+  viewSource: _propTypes.default.string
 };
 exports.bpfrpt_proptype_JobViewImpression = bpfrpt_proptype_JobViewImpression;"
 `;

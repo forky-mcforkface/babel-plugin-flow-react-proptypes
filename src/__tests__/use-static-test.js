@@ -13,11 +13,11 @@ class C extends React.Component<Props> {
 it('use-static', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
-    plugins: ['syntax-flow', [
-      require('../'),
-      { useStatic: true },
-    ]],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
+    plugins: ['@babel/syntax-flow',
+      [require('../'), { useStatic: true }],
+      "@babel/plugin-proposal-class-properties",
+    ],
   }).code;
   expect(res).toMatchSnapshot();
   expect(res).toMatch(/.propTypes =/);
