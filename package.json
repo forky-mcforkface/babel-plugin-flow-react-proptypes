@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-flow-react-proptypes",
-  "version": "24.1.2",
+  "version": "25.0.0",
   "description": "converts flow types to react proptypes",
   "main": "lib/index.js",
   "scripts": {
