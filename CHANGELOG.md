@@ -1,3 +1,10 @@
+## 25.0.0
+
+We now support and depend on babel 7 - [#211]
+
+Version 24.1.2 is the latest version for users of babel 6.
+
+[#211](https://github.com/brigand/babel-plugin-flow-react-proptypes/pull/211/)
 
 ## 24.1.2
 
