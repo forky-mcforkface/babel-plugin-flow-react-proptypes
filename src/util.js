@@ -1,5 +1,5 @@
-import * as t from 'babel-types';
-import traverse from 'babel-traverse';
+import * as t from '@babel/types';
+import traverse from '@babel/traverse';
 
 export const $debug = () => {};
 // export const $debug = console.error.bind(console);

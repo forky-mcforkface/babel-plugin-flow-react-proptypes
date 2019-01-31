@@ -22,9 +22,9 @@ export default C;
 it('export-type-and-component', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
     plugins: [
-      'syntax-flow',
+      '@babel/syntax-flow',
       [require('../'), {omitRuntimeTypeExport: true}]
     ],
   }).code;

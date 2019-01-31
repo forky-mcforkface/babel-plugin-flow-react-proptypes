@@ -1,15 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`stateless-arrow 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
+exports.default = void 0;
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20,15 +19,12 @@ var arrowFunctionWithNoBody = function arrowFunctionWithNoBody() {
 };
 
 var Foo = function Foo(props) {
-  React.createElement(
-    'div',
-    null,
-    props.x
-  );
+  React.createElement(\\"div\\", null, props.x);
 };
 
 Foo.propTypes = {
-  x: _propTypes2.default.oneOf(['option1', 'option2'])
+  x: _propTypes.default.oneOf([\\"option1\\", \\"option2\\"])
 };
-exports.default = Foo;"
+var _default = Foo;
+exports.default = _default;"
 `;

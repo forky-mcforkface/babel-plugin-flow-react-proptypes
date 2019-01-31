@@ -10,8 +10,8 @@ const Foo = (props: Props) => <div />;
 
 const getOpts = opts => ({
   babelrc: false,
-  presets: [['env', { modules: false }], 'stage-1', 'react'],
-  plugins: ['syntax-flow', [require('../'), opts]],
+  presets: [['@babel/env', { modules: false }], '@babel/react', '@babel/flow'],
+  plugins: ['@babel/syntax-flow', [require('../'), opts]],
 });
 
 it('dead-code-string', () => {

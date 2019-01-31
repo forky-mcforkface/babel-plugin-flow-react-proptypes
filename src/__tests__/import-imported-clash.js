@@ -16,8 +16,12 @@ class C extends React.Component {
 it('import-imported-clash', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
-    plugins: ['syntax-flow', require('../')],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
+    plugins: [
+      '@babel/syntax-flow',
+      require('../'),
+      "@babel/plugin-proposal-class-properties"
+    ],
   }).code;
   expect(res).toMatchSnapshot();
 });

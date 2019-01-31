@@ -1,15 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`stateless-without-jsx 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
+exports.default = void 0;
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20,7 +19,8 @@ var Foo = function Foo(props) {
 };
 
 Foo.propTypes = {
-  x: _propTypes2.default.number
+  x: _propTypes.default.number
 };
-exports.default = Foo;"
+var _default = Foo;
+exports.default = _default;"
 `;

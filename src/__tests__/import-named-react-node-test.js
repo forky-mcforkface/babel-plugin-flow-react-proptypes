@@ -13,18 +13,26 @@ const C = (props: Props) => <div />;
 it('import-named-react-node', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
-    plugins: ['syntax-flow', require('../')],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
+    plugins: [
+      '@babel/syntax-flow',
+      require('../'),
+      "@babel/plugin-proposal-class-properties"
+    ],
   }).code;
-  expect(res).toMatch(/_propTypes2\.default\.node/);
+  expect(res).toMatch(/_propTypes\.default\.node/);
   expect(res).toMatchSnapshot();
 });
 
 it('import-named-react-node esm', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: [['env', { modules: false }], 'stage-1', 'react'],
-    plugins: ['syntax-flow', require('../')],
+    presets: [['@babel/env', { modules: false }], '@babel/react', '@babel/flow'],
+    plugins: [
+      '@babel/syntax-flow',
+      require('../'),
+      "@babel/plugin-proposal-class-properties"
+    ],
   }).code;
   expect(res).toMatch(/PropTypes\.node/);
   expect(res).toMatchSnapshot();

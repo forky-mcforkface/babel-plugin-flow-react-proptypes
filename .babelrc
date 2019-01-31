@@ -1,5 +1,7 @@
 {
-  "presets": ["env"],
+  "presets": [
+    "@babel/preset-env"
+  ],
   "env": {
     "development": {
       "sourceMaps": "inline"

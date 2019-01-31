@@ -1,35 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`preserve-comments 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
+exports.default = void 0;
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var React = require('react');
 
 var C = function C(props) {
-  return React.createElement('div', null);
+  return React.createElement(\\"div\\", null);
 };
 
 C.propTypes = {
   /** foo comment */
-  foo: _propTypes2.default.string.isRequired,
-
-
+  foo: _propTypes.default.string.isRequired,
   // bar comment
-  bar: _propTypes2.default.string.isRequired,
-  baz: _propTypes2.default.shape({
+  bar: _propTypes.default.string.isRequired,
+  baz: _propTypes.default.shape({
     // subbar comment
-    subbar: _propTypes2.default.number.isRequired
+    subbar: _propTypes.default.number.isRequired
   }).isRequired
 };
-exports.default = C;"
+var _default = C;
+exports.default = _default;"
 `;

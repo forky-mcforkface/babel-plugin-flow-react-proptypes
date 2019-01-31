@@ -290,7 +290,7 @@ module.exports = function flowReactPropTypes(babel) {
           else if (i.type === 'SpreadProperty') {
             // ignore it for now
           }
-          
+
           return acc;
         }, {});
 
@@ -415,6 +415,10 @@ module.exports = function flowReactPropTypes(babel) {
     if (!opts.noStatic && (path.type === 'ClassDeclaration' || path.type === 'ClassExpression')) {
       if (path.node.id) {
         name = path.node.id.name;
+      }
+      else {
+        // It's an anonymous class but addAnnotationsToAST() needs `name` to be a string anyway
+        name = "";
       }
       targetPath = path;
     }

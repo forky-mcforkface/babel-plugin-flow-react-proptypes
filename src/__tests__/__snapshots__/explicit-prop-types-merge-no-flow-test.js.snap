@@ -1,28 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`explicit-prop-types-merge-no-flow-test 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
+exports.default = void 0;
 
 var React = require('react');
+
 var PropTypes = require('prop-types');
 
 var Foo = function Foo(props) {
-  return React.createElement(
-    'div',
-    null,
-    props.b,
-    props.d
-  );
+  return React.createElement(\\"div\\", null, props.b, props.d);
 };
 
 Foo.propTypes = {
   b: PropTypes.string,
   d: PropTypes.string
 };
-
-exports.default = Foo;"
+var _default = Foo;
+exports.default = _default;"
 `;

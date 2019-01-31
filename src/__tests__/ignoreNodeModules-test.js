@@ -15,8 +15,12 @@ class Foo extends React.PureComponent {
 it('pure-component', () => {
   const res = babel.transform(content, {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
-    plugins: ['syntax-flow', [require('../'), {ignoreNodeModules: true}]],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
+    plugins: [
+      '@babel/syntax-flow',
+      [require('../'), {ignoreNodeModules: true}],
+      "@babel/plugin-proposal-class-properties"
+    ],
   }).code;
   expect(res).toMatchSnapshot();
 });

@@ -1,160 +1,128 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`real4 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
-    value: true
+  value: true
 });
-exports.bpfrpt_proptype_directApplyRecentFilesGet = exports.bpfrpt_proptype_directApplyDraftGet = exports.bpfrpt_proptype_loginPostResult = exports.bpfrpt_proptype_popunderPostResponse = exports.bpfrpt_proptype_jobofferGetResult = exports.bpfrpt_proptype_statisticalDataGetResult = exports.bpfrpt_proptype_freqSearchSuggestionGetResult = exports.bpfrpt_proptype_jobsearchSuggestionGetResult = exports.bpfrpt_proptype_joblocationSuggestionGetResult = exports.bpfrpt_proptype_joblocationReverseLookupGetResult = exports.bpfrpt_proptype_jobalertMeGetResult = exports.bpfrpt_proptype_searchPostResult = exports.bpfrpt_proptype_jpopunderPostResult = exports.bpfrpt_proptype_SearchQuery = undefined;
+Object.defineProperty(exports, \\"bpfrpt_proptype_SearchQuery\\", {
+  enumerable: true,
+  get: function get() {
+    return _jobliftQueryParser.bpfrpt_proptype_SearchQuery;
+  }
+});
+exports.bpfrpt_proptype_directApplyRecentFilesGet = exports.bpfrpt_proptype_directApplyDraftGet = exports.bpfrpt_proptype_loginPostResult = exports.bpfrpt_proptype_popunderPostResponse = exports.bpfrpt_proptype_jobofferGetResult = exports.bpfrpt_proptype_statisticalDataGetResult = exports.bpfrpt_proptype_freqSearchSuggestionGetResult = exports.bpfrpt_proptype_jobsearchSuggestionGetResult = exports.bpfrpt_proptype_joblocationSuggestionGetResult = exports.bpfrpt_proptype_joblocationReverseLookupGetResult = exports.bpfrpt_proptype_jobalertMeGetResult = exports.bpfrpt_proptype_searchPostResult = exports.bpfrpt_proptype_jpopunderPostResult = void 0;
 
-var _JLCommon = require('./JLCommon');
+var _JLCommon = require(\\"./JLCommon\\");
 
-var _DirectApply = require('./reducer/DirectApply');
+var _DirectApply = require(\\"./reducer/DirectApply\\");
 
-var _jobliftQueryParser = require('./joblift-query-parser');
+var _jobliftQueryParser = require(\\"./joblift-query-parser\\");
 
-var _propTypes = require('prop-types');
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var bpfrpt_proptype_jpopunderPostResult = {
-    items: _propTypes2.default.arrayOf(function () {
-        return (typeof _JLCommon.bpfrpt_proptype_Job === 'function' ? _JLCommon.bpfrpt_proptype_Job.isRequired ? _JLCommon.bpfrpt_proptype_Job.isRequired : _JLCommon.bpfrpt_proptype_Job : _propTypes2.default.shape(_JLCommon.bpfrpt_proptype_Job).isRequired).apply(this, arguments);
-    }).isRequired,
-    adPartners: _propTypes2.default.arrayOf(function () {
-        return (typeof _JLCommon.bpfrpt_proptype_AdPartner === 'function' ? _JLCommon.bpfrpt_proptype_AdPartner.isRequired ? _JLCommon.bpfrpt_proptype_AdPartner.isRequired : _JLCommon.bpfrpt_proptype_AdPartner : _propTypes2.default.shape(_JLCommon.bpfrpt_proptype_AdPartner).isRequired).apply(this, arguments);
-    }).isRequired
+  items: _propTypes.default.arrayOf(function () {
+    return (typeof _JLCommon.bpfrpt_proptype_Job === \\"function\\" ? _JLCommon.bpfrpt_proptype_Job.isRequired ? _JLCommon.bpfrpt_proptype_Job.isRequired : _JLCommon.bpfrpt_proptype_Job : _propTypes.default.shape(_JLCommon.bpfrpt_proptype_Job).isRequired).apply(this, arguments);
+  }).isRequired,
+  adPartners: _propTypes.default.arrayOf(function () {
+    return (typeof _JLCommon.bpfrpt_proptype_AdPartner === \\"function\\" ? _JLCommon.bpfrpt_proptype_AdPartner.isRequired ? _JLCommon.bpfrpt_proptype_AdPartner.isRequired : _JLCommon.bpfrpt_proptype_AdPartner : _propTypes.default.shape(_JLCommon.bpfrpt_proptype_AdPartner).isRequired).apply(this, arguments);
+  }).isRequired
 };
+exports.bpfrpt_proptype_jpopunderPostResult = bpfrpt_proptype_jpopunderPostResult;
 var bpfrpt_proptype_searchPostResult = {
-    items: _propTypes2.default.arrayOf(function () {
-        return (typeof _JLCommon.bpfrpt_proptype_Job === 'function' ? _JLCommon.bpfrpt_proptype_Job.isRequired ? _JLCommon.bpfrpt_proptype_Job.isRequired : _JLCommon.bpfrpt_proptype_Job : _propTypes2.default.shape(_JLCommon.bpfrpt_proptype_Job).isRequired).apply(this, arguments);
-    }).isRequired,
-    seoText: _propTypes2.default.arrayOf(function () {
-        return (typeof _JLCommon.bpfrpt_proptype_SeoText === 'function' ? _JLCommon.bpfrpt_proptype_SeoText.isRequired ? _JLCommon.bpfrpt_proptype_SeoText.isRequired : _JLCommon.bpfrpt_proptype_SeoText : _propTypes2.default.shape(_JLCommon.bpfrpt_proptype_SeoText).isRequired).apply(this, arguments);
-    }),
-    query: function query() {
-        return (typeof _jobliftQueryParser.bpfrpt_proptype_SearchQuery === 'function' ? _jobliftQueryParser.bpfrpt_proptype_SearchQuery.isRequired ? _jobliftQueryParser.bpfrpt_proptype_SearchQuery.isRequired : _jobliftQueryParser.bpfrpt_proptype_SearchQuery : _propTypes2.default.shape(_jobliftQueryParser.bpfrpt_proptype_SearchQuery).isRequired).apply(this, arguments);
-    },
-    index: _propTypes2.default.bool.isRequired,
-    total: _propTypes2.default.number.isRequired,
-    pages: _propTypes2.default.number.isRequired,
-    resultId: _propTypes2.default.string.isRequired,
-    facets: _propTypes2.default.objectOf(_propTypes2.default.arrayOf(_propTypes2.default.shape({
-        key: _propTypes2.default.number.isRequired,
-        amount: _propTypes2.default.number.isRequired,
-        translation: _propTypes2.default.string.isRequired
-    }).isRequired).isRequired)
+  items: _propTypes.default.arrayOf(function () {
+    return (typeof _JLCommon.bpfrpt_proptype_Job === \\"function\\" ? _JLCommon.bpfrpt_proptype_Job.isRequired ? _JLCommon.bpfrpt_proptype_Job.isRequired : _JLCommon.bpfrpt_proptype_Job : _propTypes.default.shape(_JLCommon.bpfrpt_proptype_Job).isRequired).apply(this, arguments);
+  }).isRequired,
+  seoText: _propTypes.default.arrayOf(function () {
+    return (typeof _JLCommon.bpfrpt_proptype_SeoText === \\"function\\" ? _JLCommon.bpfrpt_proptype_SeoText.isRequired ? _JLCommon.bpfrpt_proptype_SeoText.isRequired : _JLCommon.bpfrpt_proptype_SeoText : _propTypes.default.shape(_JLCommon.bpfrpt_proptype_SeoText).isRequired).apply(this, arguments);
+  }),
+  query: function query() {
+    return (typeof _jobliftQueryParser.bpfrpt_proptype_SearchQuery === \\"function\\" ? _jobliftQueryParser.bpfrpt_proptype_SearchQuery.isRequired ? _jobliftQueryParser.bpfrpt_proptype_SearchQuery.isRequired : _jobliftQueryParser.bpfrpt_proptype_SearchQuery : _propTypes.default.shape(_jobliftQueryParser.bpfrpt_proptype_SearchQuery).isRequired).apply(this, arguments);
+  },
+  index: _propTypes.default.bool.isRequired,
+  total: _propTypes.default.number.isRequired,
+  pages: _propTypes.default.number.isRequired,
+  resultId: _propTypes.default.string.isRequired,
+  facets: _propTypes.default.objectOf(_propTypes.default.arrayOf(_propTypes.default.shape({
+    key: _propTypes.default.number.isRequired,
+    amount: _propTypes.default.number.isRequired,
+    translation: _propTypes.default.string.isRequired
+  }).isRequired).isRequired)
 };
-
-// eslint-disable-next-line
-
+exports.bpfrpt_proptype_searchPostResult = bpfrpt_proptype_searchPostResult;
 var bpfrpt_proptype_jobalertMeGetResult = {
-    description: _propTypes2.default.string.isRequired,
-    jobalerts: _propTypes2.default.arrayOf(function () {
-        return (typeof _JLCommon.bpfrpt_proptype_JobAlert === 'function' ? _JLCommon.bpfrpt_proptype_JobAlert.isRequired ? _JLCommon.bpfrpt_proptype_JobAlert.isRequired : _JLCommon.bpfrpt_proptype_JobAlert : _propTypes2.default.shape(_JLCommon.bpfrpt_proptype_JobAlert).isRequired).apply(this, arguments);
-    }).isRequired
+  description: _propTypes.default.string.isRequired,
+  jobalerts: _propTypes.default.arrayOf(function () {
+    return (typeof _JLCommon.bpfrpt_proptype_JobAlert === \\"function\\" ? _JLCommon.bpfrpt_proptype_JobAlert.isRequired ? _JLCommon.bpfrpt_proptype_JobAlert.isRequired : _JLCommon.bpfrpt_proptype_JobAlert : _propTypes.default.shape(_JLCommon.bpfrpt_proptype_JobAlert).isRequired).apply(this, arguments);
+  }).isRequired
 };
-
-// api/jobalert/me/
-
+exports.bpfrpt_proptype_jobalertMeGetResult = bpfrpt_proptype_jobalertMeGetResult;
 var bpfrpt_proptype_joblocationReverseLookupGetResult = {
-    display_name: _propTypes2.default.string.isRequired
+  display_name: _propTypes.default.string.isRequired
 };
-
-// api/joblocation-reverse-lookup
-
+exports.bpfrpt_proptype_joblocationReverseLookupGetResult = bpfrpt_proptype_joblocationReverseLookupGetResult;
 var bpfrpt_proptype_joblocationSuggestionGetResult = {
-    suggestions: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-        value: _propTypes2.default.string.isRequired
-    }).isRequired).isRequired
+  suggestions: _propTypes.default.arrayOf(_propTypes.default.shape({
+    value: _propTypes.default.string.isRequired
+  }).isRequired).isRequired
 };
-
-// api/joblocation-suggestion
-
+exports.bpfrpt_proptype_joblocationSuggestionGetResult = bpfrpt_proptype_joblocationSuggestionGetResult;
 var bpfrpt_proptype_jobsearchSuggestionGetResult = {
-    suggestions: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-        value: _propTypes2.default.string.isRequired,
-        numJobs: _propTypes2.default.number
-    }).isRequired).isRequired
+  suggestions: _propTypes.default.arrayOf(_propTypes.default.shape({
+    value: _propTypes.default.string.isRequired,
+    numJobs: _propTypes.default.number
+  }).isRequired).isRequired
 };
-
-// api/jobsearch-suggestion
-
+exports.bpfrpt_proptype_jobsearchSuggestionGetResult = bpfrpt_proptype_jobsearchSuggestionGetResult;
 var bpfrpt_proptype_freqSearchSuggestionGetResult = {
-    suggestions: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-        value: _propTypes2.default.string.isRequired,
-        numJobs: _propTypes2.default.number.isRequired
-    }).isRequired).isRequired
+  suggestions: _propTypes.default.arrayOf(_propTypes.default.shape({
+    value: _propTypes.default.string.isRequired,
+    numJobs: _propTypes.default.number.isRequired
+  }).isRequired).isRequired
 };
-
-// api/jobsearch-suggestion/popular
-
+exports.bpfrpt_proptype_freqSearchSuggestionGetResult = bpfrpt_proptype_freqSearchSuggestionGetResult;
 var bpfrpt_proptype_statisticalDataGetResult = {
-    keys: _propTypes2.default.arrayOf(_propTypes2.default.string.isRequired).isRequired,
-    data: _propTypes2.default.object.isRequired
+  keys: _propTypes.default.arrayOf(_propTypes.default.string.isRequired).isRequired,
+  data: _propTypes.default.object.isRequired
 };
-
-// api/charts
-
-var bpfrpt_proptype_jobofferGetResult = _JLCommon.bpfrpt_proptype_Job === _propTypes2.default.any ? {} : _JLCommon.bpfrpt_proptype_Job;
-
-// api/joboffer
-
+exports.bpfrpt_proptype_statisticalDataGetResult = bpfrpt_proptype_statisticalDataGetResult;
+var bpfrpt_proptype_jobofferGetResult = _JLCommon.bpfrpt_proptype_Job === _propTypes.default.any ? {} : _JLCommon.bpfrpt_proptype_Job;
+exports.bpfrpt_proptype_jobofferGetResult = bpfrpt_proptype_jobofferGetResult;
 var bpfrpt_proptype_popunderPostResponse = {
-    showPopunder: _propTypes2.default.bool.isRequired,
-    url: _propTypes2.default.string.isRequired,
-    itemCount: _propTypes2.default.number.isRequired,
-    partner: _propTypes2.default.string.isRequired,
-    customer: _propTypes2.default.string.isRequired,
-    customerId: _propTypes2.default.number.isRequired,
-    suppressTransactionId: _propTypes2.default.bool,
-    ch: _propTypes2.default.string.isRequired
+  showPopunder: _propTypes.default.bool.isRequired,
+  url: _propTypes.default.string.isRequired,
+  itemCount: _propTypes.default.number.isRequired,
+  partner: _propTypes.default.string.isRequired,
+  customer: _propTypes.default.string.isRequired,
+  customerId: _propTypes.default.number.isRequired,
+  suppressTransactionId: _propTypes.default.bool,
+  ch: _propTypes.default.string.isRequired
 };
-
-// api/popunder
-
+exports.bpfrpt_proptype_popunderPostResponse = bpfrpt_proptype_popunderPostResponse;
 var bpfrpt_proptype_loginPostResult = {
-    displayName: _propTypes2.default.string,
-    firstName: _propTypes2.default.string.isRequired,
-    initialCreated: _propTypes2.default.bool.isRequired,
-    isAnonymous: _propTypes2.default.bool,
-    lastName: _propTypes2.default.string.isRequired,
-    localAccounts: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-        email: _propTypes2.default.string.isRequired
-    }).isRequired).isRequired,
-    socialAccounts: _propTypes2.default.arrayOf(_propTypes2.default.object.isRequired).isRequired,
-    uniqueEmails: _propTypes2.default.arrayOf(_propTypes2.default.string.isRequired).isRequired,
-    uuid: _propTypes2.default.string.isRequired
+  displayName: _propTypes.default.string,
+  firstName: _propTypes.default.string.isRequired,
+  initialCreated: _propTypes.default.bool.isRequired,
+  isAnonymous: _propTypes.default.bool,
+  lastName: _propTypes.default.string.isRequired,
+  localAccounts: _propTypes.default.arrayOf(_propTypes.default.shape({
+    email: _propTypes.default.string.isRequired
+  }).isRequired).isRequired,
+  socialAccounts: _propTypes.default.arrayOf(_propTypes.default.object.isRequired).isRequired,
+  uniqueEmails: _propTypes.default.arrayOf(_propTypes.default.string.isRequired).isRequired,
+  uuid: _propTypes.default.string.isRequired
 };
+exports.bpfrpt_proptype_loginPostResult = bpfrpt_proptype_loginPostResult;
+var bpfrpt_proptype_directApplyDraftGet = _DirectApply.bpfrpt_proptype_DirectApplyDraft === _propTypes.default.any ? {} : _DirectApply.bpfrpt_proptype_DirectApplyDraft;
+exports.bpfrpt_proptype_directApplyDraftGet = bpfrpt_proptype_directApplyDraftGet;
 
-// auth/json/login/local
-
-var bpfrpt_proptype_directApplyDraftGet = _DirectApply.bpfrpt_proptype_DirectApplyDraft === _propTypes2.default.any ? {} : _DirectApply.bpfrpt_proptype_DirectApplyDraft;
-
-// api/direct-apply/offer/<jobofferid>/draft
-
-var bpfrpt_proptype_directApplyRecentFilesGet = _propTypes2.default.arrayOf(function () {
-    return (typeof _DirectApply.bpfrpt_proptype_DirectApplyFile === 'function' ? _DirectApply.bpfrpt_proptype_DirectApplyFile.isRequired ? _DirectApply.bpfrpt_proptype_DirectApplyFile.isRequired : _DirectApply.bpfrpt_proptype_DirectApplyFile : _propTypes2.default.shape(_DirectApply.bpfrpt_proptype_DirectApplyFile).isRequired).apply(this, arguments);
+var bpfrpt_proptype_directApplyRecentFilesGet = _propTypes.default.arrayOf(function () {
+  return (typeof _DirectApply.bpfrpt_proptype_DirectApplyFile === \\"function\\" ? _DirectApply.bpfrpt_proptype_DirectApplyFile.isRequired ? _DirectApply.bpfrpt_proptype_DirectApplyFile.isRequired : _DirectApply.bpfrpt_proptype_DirectApplyFile : _propTypes.default.shape(_DirectApply.bpfrpt_proptype_DirectApplyFile).isRequired).apply(this, arguments);
 });
 
-// api/direct-apply/files/recent
-
-
-exports.bpfrpt_proptype_SearchQuery = _jobliftQueryParser.bpfrpt_proptype_SearchQuery;
-exports.bpfrpt_proptype_jpopunderPostResult = bpfrpt_proptype_jpopunderPostResult;
-exports.bpfrpt_proptype_searchPostResult = bpfrpt_proptype_searchPostResult;
-exports.bpfrpt_proptype_jobalertMeGetResult = bpfrpt_proptype_jobalertMeGetResult;
-exports.bpfrpt_proptype_joblocationReverseLookupGetResult = bpfrpt_proptype_joblocationReverseLookupGetResult;
-exports.bpfrpt_proptype_joblocationSuggestionGetResult = bpfrpt_proptype_joblocationSuggestionGetResult;
-exports.bpfrpt_proptype_jobsearchSuggestionGetResult = bpfrpt_proptype_jobsearchSuggestionGetResult;
-exports.bpfrpt_proptype_freqSearchSuggestionGetResult = bpfrpt_proptype_freqSearchSuggestionGetResult;
-exports.bpfrpt_proptype_statisticalDataGetResult = bpfrpt_proptype_statisticalDataGetResult;
-exports.bpfrpt_proptype_jobofferGetResult = bpfrpt_proptype_jobofferGetResult;
-exports.bpfrpt_proptype_popunderPostResponse = bpfrpt_proptype_popunderPostResponse;
-exports.bpfrpt_proptype_loginPostResult = bpfrpt_proptype_loginPostResult;
-exports.bpfrpt_proptype_directApplyDraftGet = bpfrpt_proptype_directApplyDraftGet;
 exports.bpfrpt_proptype_directApplyRecentFilesGet = bpfrpt_proptype_directApplyRecentFilesGet;"
 `;

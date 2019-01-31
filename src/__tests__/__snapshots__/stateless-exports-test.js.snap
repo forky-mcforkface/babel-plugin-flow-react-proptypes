@@ -6,32 +6,31 @@ exports[`stateless-exports 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.C2 = exports.C1 = undefined;
+exports.C2 = exports.C1 = void 0;
 
-var _react = require(\\"react\\");
+var _react = _interopRequireDefault(require(\\"react\\"));
 
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = require(\\"prop-types\\");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var C1 = exports.C1 = function C1(_ref) {
+var C1 = function C1(_ref) {
   var m = _ref.m;
-
-  return _react2.default.createElement(\\"div\\", null);
+  return _react.default.createElement(\\"div\\", null);
 };
+
+exports.C1 = C1;
 C1.propTypes = {
-  m: _propTypes2.default.string.isRequired
+  m: _propTypes.default.string.isRequired
 };
-var C2 = exports.C2 = function C2(_ref2) {
-  var m = _ref2.m;
 
-  return _react2.default.createElement(\\"div\\", null);
+var C2 = function C2(_ref2) {
+  var m = _ref2.m;
+  return _react.default.createElement(\\"div\\", null);
 };
+
+exports.C2 = C2;
 C2.propTypes = {
-  m: _propTypes2.default.string.isRequired
+  m: _propTypes.default.string.isRequired
 };"
 `;

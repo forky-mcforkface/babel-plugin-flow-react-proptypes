@@ -1,22 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`export-type-from 1`] = `
-"'use strict';
+"\\"use strict\\";
 
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.bpfrpt_proptype_Bar = exports.bpfrpt_proptype_Foo = undefined;
+Object.defineProperty(exports, \\"bpfrpt_proptype_Foo\\", {
+  enumerable: true,
+  get: function get() {
+    return _types.bpfrpt_proptype_Foo;
+  }
+});
+Object.defineProperty(exports, \\"bpfrpt_proptype_Bar\\", {
+  enumerable: true,
+  get: function get() {
+    return _types.bpfrpt_proptype_Bar;
+  }
+});
 
-var _types = require('./types');
-
-exports.bpfrpt_proptype_Foo = _types.bpfrpt_proptype_Foo;
-exports.bpfrpt_proptype_Bar = _types.bpfrpt_proptype_Bar;"
+var _types = require(\\"./types\\");"
 `;
 
 exports[`export-type-from-esm 1`] = `
-"import { bpfrpt_proptype_Foo } from './types';
+"import { bpfrpt_proptype_Foo } from \\"./types\\";
 export { bpfrpt_proptype_Foo };
-import { bpfrpt_proptype_Bar } from './types';
+import { bpfrpt_proptype_Bar } from \\"./types\\";
 export { bpfrpt_proptype_Bar };"
 `;

@@ -3,17 +3,16 @@
 exports[`function-with-type-annotation 1`] = `
 "\\"use strict\\";
 
-var _propTypes = require(\\"prop-types\\");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var C = function C(props) {};
+
 C.propTypes = {
   bar: function bar(props, propName, componentName) {
     if (!Object.prototype.hasOwnProperty.call(props, propName)) {
-      throw new Error(\\"Prop \`\\" + propName + \\"\` has type 'any' or 'mixed', but was not provided to \`\\" + componentName + \\"\`. Pass undefined or any other value.\\");
+      throw new Error(\\"Prop \`\\".concat(propName, \\"\` has type 'any' or 'mixed', but was not provided to \`\\").concat(componentName, \\"\`. Pass undefined or any other value.\\"));
     }
   }
 };"

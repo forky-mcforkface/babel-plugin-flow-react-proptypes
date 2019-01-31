@@ -3,8 +3,12 @@ module.exports.transform = (someString) => {
 
   const babelOpts = {
     babelrc: false,
-    presets: ['env', 'stage-1', 'react'],
-    plugins: ['syntax-flow', require('../../')],
+    presets: ['@babel/env', '@babel/react', '@babel/flow'],
+    plugins: [
+      '@babel/syntax-flow',
+      require('../../'),
+      "@babel/plugin-proposal-class-properties"
+    ],
   };
   return babel.transform(someString, babelOpts).code;
 };
