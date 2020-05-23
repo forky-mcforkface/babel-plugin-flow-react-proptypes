@@ -10,13 +10,13 @@ exports.bpfrpt_proptype_Pager = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var bpfrpt_proptype_Pager = {
-  next: _propTypes.default.func.isRequired,
-  prev: _propTypes.default.func.isRequired,
-  hasNext: _propTypes.default.bool.isRequired,
-  hasPrev: _propTypes.default.bool.isRequired
+  \\"next\\": _propTypes[\\"default\\"].func.isRequired,
+  \\"prev\\": _propTypes[\\"default\\"].func.isRequired,
+  \\"hasNext\\": _propTypes[\\"default\\"].bool.isRequired,
+  \\"hasPrev\\": _propTypes[\\"default\\"].bool.isRequired
 };
 exports.bpfrpt_proptype_Pager = bpfrpt_proptype_Pager;"
 `;

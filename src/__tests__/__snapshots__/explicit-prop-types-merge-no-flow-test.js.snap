@@ -6,14 +6,14 @@ exports[`explicit-prop-types-merge-no-flow-test 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.default = void 0;
+exports[\\"default\\"] = void 0;
 
 var React = require('react');
 
 var PropTypes = require('prop-types');
 
 var Foo = function Foo(props) {
-  return React.createElement(\\"div\\", null, props.b, props.d);
+  return /*#__PURE__*/React.createElement(\\"div\\", null, props.b, props.d);
 };
 
 Foo.propTypes = {
@@ -21,5 +21,5 @@ Foo.propTypes = {
   d: PropTypes.string
 };
 var _default = Foo;
-exports.default = _default;"
+exports[\\"default\\"] = _default;"
 `;

@@ -5,26 +5,26 @@ exports[`import-named-react-node 1`] = `
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var C = function C(props) {
-  return React.createElement(\\"div\\", null);
+  return /*#__PURE__*/React.createElement(\\"div\\", null);
 };
 
 C.propTypes = {
-  foo: function foo() {
-    return (typeof _propTypes.default.node === \\"function\\" ? _propTypes.default.node.isRequired ? _propTypes.default.node.isRequired : _propTypes.default.node : _propTypes.default.shape(_propTypes.default.node).isRequired).apply(this, arguments);
+  \\"foo\\": function foo() {
+    return (typeof _propTypes[\\"default\\"].node === \\"function\\" ? _propTypes[\\"default\\"].node.isRequired ? _propTypes[\\"default\\"].node.isRequired : _propTypes[\\"default\\"].node : _propTypes[\\"default\\"].shape(_propTypes[\\"default\\"].node).isRequired).apply(this, arguments);
   }
 };"
 `;
 
 exports[`import-named-react-node esm 1`] = `
 "var C = function C(props) {
-  return React.createElement(\\"div\\", null);
+  return /*#__PURE__*/React.createElement(\\"div\\", null);
 };
 
 C.propTypes = {
-  foo: function foo() {
+  \\"foo\\": function foo() {
     return (typeof PropTypes.node === \\"function\\" ? PropTypes.node.isRequired ? PropTypes.node.isRequired : PropTypes.node : PropTypes.shape(PropTypes.node).isRequired).apply(this, arguments);
   }
 };

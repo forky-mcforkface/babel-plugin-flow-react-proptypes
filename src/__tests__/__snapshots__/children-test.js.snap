@@ -5,26 +5,27 @@ exports[`children 1`] = `
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var React = require('react');
 
 var Element = React.Element;
 
 function Foo(props) {
+  /*#__PURE__*/
   React.createElement(\\"div\\", null, props.children);
 }
 
 Foo.propTypes = {
-  children: _propTypes.default.node.isRequired,
-  children2: _propTypes.default.arrayOf(function () {
-    return (typeof Element === \\"function\\" ? _propTypes.default.instanceOf(Element).isRequired : _propTypes.default.any.isRequired).apply(this, arguments);
+  \\"children\\": _propTypes[\\"default\\"].node.isRequired,
+  \\"children2\\": _propTypes[\\"default\\"].arrayOf(function () {
+    return (typeof Element === \\"function\\" ? _propTypes[\\"default\\"].instanceOf(Element).isRequired : _propTypes[\\"default\\"].any.isRequired).apply(this, arguments);
   }).isRequired,
-  children3: function children3() {
-    return (typeof Element === \\"function\\" ? _propTypes.default.instanceOf(Element).isRequired : _propTypes.default.any.isRequired).apply(this, arguments);
+  \\"children3\\": function children3() {
+    return (typeof Element === \\"function\\" ? _propTypes[\\"default\\"].instanceOf(Element).isRequired : _propTypes[\\"default\\"].any.isRequired).apply(this, arguments);
   },
-  children4: function children4() {
-    return (typeof Element === \\"function\\" ? _propTypes.default.instanceOf(Element).isRequired : _propTypes.default.any.isRequired).apply(this, arguments);
+  \\"children4\\": function children4() {
+    return (typeof Element === \\"function\\" ? _propTypes[\\"default\\"].instanceOf(Element).isRequired : _propTypes[\\"default\\"].any.isRequired).apply(this, arguments);
   }
 };"
 `;

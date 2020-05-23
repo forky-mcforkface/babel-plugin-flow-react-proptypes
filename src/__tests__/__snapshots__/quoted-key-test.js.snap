@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`union-void-through-generic 1`] = `
+exports[`quoted-key 1`] = `
 "\\"use strict\\";
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
@@ -9,11 +9,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\
 
 var React = require('react');
 
-function C(props) {
-  return /*#__PURE__*/React.createElement(\\"div\\", null, props.foo);
+function Comp(props) {
+  return /*#__PURE__*/React.createElement(\\"div\\", null);
 }
 
-C.propTypes = {
-  \\"foo\\": _propTypes[\\"default\\"].string
+Comp.propTypes = {
+  \\"unquoted\\": _propTypes[\\"default\\"].string.isRequired,
+  \\"data-cy\\": _propTypes[\\"default\\"].string.isRequired
 };"
 `;

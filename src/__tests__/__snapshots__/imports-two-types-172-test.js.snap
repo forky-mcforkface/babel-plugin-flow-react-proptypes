@@ -4,14 +4,14 @@ exports[`imports-two-types-172 1`] = `
 "var React = require('react');
 
 var C = function C(props) {
-  return React.createElement(\\"div\\", null);
+  return /*#__PURE__*/React.createElement(\\"div\\", null);
 };
 
 C.propTypes = {
-  foo: function foo() {
+  \\"foo\\": function foo() {
     return (typeof bpfrpt_proptype_Foo === \\"function\\" ? bpfrpt_proptype_Foo.isRequired ? bpfrpt_proptype_Foo.isRequired : bpfrpt_proptype_Foo : PropTypes.shape(bpfrpt_proptype_Foo).isRequired).apply(this, arguments);
   },
-  bar: function bar() {
+  \\"bar\\": function bar() {
     return (typeof bpfrpt_proptype_Bar === \\"function\\" ? bpfrpt_proptype_Bar.isRequired ? bpfrpt_proptype_Bar.isRequired : bpfrpt_proptype_Bar : PropTypes.shape(bpfrpt_proptype_Bar).isRequired).apply(this, arguments);
   }
 };

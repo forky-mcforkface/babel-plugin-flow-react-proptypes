@@ -5,19 +5,19 @@ exports[`indirect-jsx 1`] = `
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var C = function C(props) {
   var el = null;
 
   if (true) {
-    el = React.createElement(\\"div\\", null);
+    el = /*#__PURE__*/React.createElement(\\"div\\", null);
   }
 
   return el;
 };
 
 C.propTypes = {
-  name: _propTypes.default.string.isRequired
+  \\"name\\": _propTypes[\\"default\\"].string.isRequired
 };"
 `;

@@ -20,7 +20,7 @@ it('import-named-react-node', () => {
       "@babel/plugin-proposal-class-properties"
     ],
   }).code;
-  expect(res).toMatch(/_propTypes\.default\.node/);
+  expect(res).toMatch(/_propTypes\[['"]default['"]]\.node\.isRequired/);
   expect(res).toMatchSnapshot();
 });
 
@@ -34,6 +34,6 @@ it('import-named-react-node esm', () => {
       "@babel/plugin-proposal-class-properties"
     ],
   }).code;
-  expect(res).toMatch(/PropTypes\.node/);
+  expect(res).toMatch(/PropTypes\.node\.isRequired/);
   expect(res).toMatchSnapshot();
 });

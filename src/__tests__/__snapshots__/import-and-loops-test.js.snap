@@ -6,7 +6,7 @@ exports[`import-and-loops 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.bpfrpt_proptype_T = exports.default = void 0;
+exports.bpfrpt_proptype_T = exports[\\"default\\"] = void 0;
 
 var _react = _interopRequireDefault(require(\\"react\\"));
 
@@ -14,12 +14,12 @@ var _types = require(\\"../types\\");
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var bpfrpt_proptype_T = {
-  flag: _propTypes.default.bool.isRequired,
-  list: _propTypes.default.arrayOf(function () {
-    return (typeof _types.bpfrpt_proptype_ExternalType === \\"function\\" ? _types.bpfrpt_proptype_ExternalType.isRequired ? _types.bpfrpt_proptype_ExternalType.isRequired : _types.bpfrpt_proptype_ExternalType : _propTypes.default.shape(_types.bpfrpt_proptype_ExternalType).isRequired).apply(this, arguments);
+  \\"flag\\": _propTypes[\\"default\\"].bool.isRequired,
+  \\"list\\": _propTypes[\\"default\\"].arrayOf(function () {
+    return (typeof _types.bpfrpt_proptype_ExternalType === \\"function\\" ? _types.bpfrpt_proptype_ExternalType.isRequired ? _types.bpfrpt_proptype_ExternalType.isRequired : _types.bpfrpt_proptype_ExternalType : _propTypes[\\"default\\"].shape(_types.bpfrpt_proptype_ExternalType).isRequired).apply(this, arguments);
   }).isRequired
 };
 exports.bpfrpt_proptype_T = bpfrpt_proptype_T;
@@ -27,8 +27,8 @@ exports.bpfrpt_proptype_T = bpfrpt_proptype_T;
 var C = function C(_ref) {
   var flag = _ref.flag,
       list = _ref.list;
-  return flag ? _react.default.createElement(\\"div\\", null, \\"yes\\") : _react.default.createElement(Select, null, list.map(function (e) {
-    return _react.default.createElement(\\"option\\", {
+  return flag ? /*#__PURE__*/_react[\\"default\\"].createElement(\\"div\\", null, \\"yes\\") : /*#__PURE__*/_react[\\"default\\"].createElement(Select, null, list.map(function (e) {
+    return /*#__PURE__*/_react[\\"default\\"].createElement(\\"option\\", {
       value: e.id,
       key: e.id
     });
@@ -37,5 +37,5 @@ var C = function C(_ref) {
 
 C.propTypes = bpfrpt_proptype_T;
 var _default = C;
-exports.default = _default;"
+exports[\\"default\\"] = _default;"
 `;

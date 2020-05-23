@@ -6,28 +6,29 @@ exports[`export-type-and-component 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.bpfrpt_proptype_T = exports.default = void 0;
+exports.bpfrpt_proptype_T = exports[\\"default\\"] = void 0;
 
 var _react = _interopRequireDefault(require(\\"react\\"));
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var bpfrpt_proptype_T = {
-  f: _propTypes.default.func.isRequired,
-  i: _propTypes.default.number.isRequired,
-  x: _propTypes.default.oneOf([\\"foo\\", \\"baz\\"]).isRequired
+  \\"f\\": _propTypes[\\"default\\"].func.isRequired,
+  \\"i\\": _propTypes[\\"default\\"].number.isRequired,
+  \\"x\\": _propTypes[\\"default\\"].oneOf([\\"foo\\", \\"baz\\"]).isRequired
 };
 exports.bpfrpt_proptype_T = bpfrpt_proptype_T;
 
 var C = function C(_ref) {
   var f = _ref.f;
 
-  _react.default.createElement(\\"div\\", null);
+  /*#__PURE__*/
+  _react[\\"default\\"].createElement(\\"div\\", null);
 };
 
 C.propTypes = bpfrpt_proptype_T;
 var _default = C;
-exports.default = _default;"
+exports[\\"default\\"] = _default;"
 `;

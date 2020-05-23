@@ -6,11 +6,11 @@ exports[`stateless-without-jsx 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.default = void 0;
+exports[\\"default\\"] = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var React = require('react');
 
@@ -19,8 +19,8 @@ var Foo = function Foo(props) {
 };
 
 Foo.propTypes = {
-  x: _propTypes.default.number
+  \\"x\\": _propTypes[\\"default\\"].number
 };
 var _default = Foo;
-exports.default = _default;"
+exports[\\"default\\"] = _default;"
 `;

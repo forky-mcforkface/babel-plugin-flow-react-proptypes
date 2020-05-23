@@ -10,18 +10,18 @@ exports.bpfrpt_proptype_JumpToAction = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var ActionTypes = {
   JUMP_TO: 'react-native/NavigationExperimental/tabs-jumpTo'
 };
 var bpfrpt_proptype_JumpToAction = {
-  type: function type(props, propName, componentName) {
+  \\"type\\": function type(props, propName, componentName) {
     if (!Object.prototype.hasOwnProperty.call(props, propName)) {
       throw new Error(\\"Prop \`\\".concat(propName, \\"\` has type 'any' or 'mixed', but was not provided to \`\\").concat(componentName, \\"\`. Pass undefined or any other value.\\"));
     }
   },
-  index: _propTypes.default.number.isRequired
+  \\"index\\": _propTypes[\\"default\\"].number.isRequired
 };
 exports.bpfrpt_proptype_JumpToAction = bpfrpt_proptype_JumpToAction;"
 `;

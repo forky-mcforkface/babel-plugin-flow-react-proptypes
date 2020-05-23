@@ -12,25 +12,25 @@ var _react = _interopRequireDefault(require(\\"react\\"));
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var C1 = function C1(_ref) {
   var m = _ref.m;
-  return _react.default.createElement(\\"div\\", null);
+  return /*#__PURE__*/_react[\\"default\\"].createElement(\\"div\\", null);
 };
 
 exports.C1 = C1;
 C1.propTypes = {
-  m: _propTypes.default.string.isRequired
+  \\"m\\": _propTypes[\\"default\\"].string.isRequired
 };
 
 var C2 = function C2(_ref2) {
   var m = _ref2.m;
-  return _react.default.createElement(\\"div\\", null);
+  return /*#__PURE__*/_react[\\"default\\"].createElement(\\"div\\", null);
 };
 
 exports.C2 = C2;
 C2.propTypes = {
-  m: _propTypes.default.string.isRequired
+  \\"m\\": _propTypes[\\"default\\"].string.isRequired
 };"
 `;
