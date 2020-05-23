@@ -6,11 +6,11 @@ exports[`stateless-inline-defaults 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.default = Foo;
+exports[\\"default\\"] = Foo;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var React = require('react');
 
@@ -19,11 +19,13 @@ function Foo(_ref) {
       x = _ref$x === void 0 ? 1 : _ref$x,
       _ref$y = _ref.y,
       y = _ref$y === void 0 ? 'foo' : _ref$y;
+
+  /*#__PURE__*/
   React.createElement(\\"div\\", null, x, \\"/\\", y);
 }
 
 Foo.propTypes = {
-  x: _propTypes.default.number,
-  y: _propTypes.default.string
+  \\"x\\": _propTypes[\\"default\\"].number,
+  \\"y\\": _propTypes[\\"default\\"].string
 };"
 `;

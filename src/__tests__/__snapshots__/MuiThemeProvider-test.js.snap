@@ -6,7 +6,7 @@ exports[`MuiThemeProvider 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.default = void 0;
+exports[\\"default\\"] = void 0;
 
 var _react = _interopRequireDefault(require(\\"react\\"));
 
@@ -16,13 +16,17 @@ var _brcast = _interopRequireDefault(require(\\"brcast\\"));
 
 var _themeListener = _interopRequireWildcard(require(\\"./themeListener\\"));
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== \\"function\\") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== \\"object\\" && typeof obj !== \\"function\\") { return { \\"default\\": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj[\\"default\\"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _typeof(obj) { if (typeof Symbol === \\"function\\" && typeof Symbol.iterator === \\"symbol\\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \\"function\\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \\"symbol\\" : typeof obj; }; } return _typeof(obj); }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+function _typeof(obj) { \\"@babel/helpers - typeof\\"; if (typeof Symbol === \\"function\\" && typeof Symbol.iterator === \\"symbol\\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \\"function\\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \\"symbol\\" : typeof obj; }; } return _typeof(obj); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\\"Cannot call a class as a function\\"); } }
 
@@ -30,37 +34,41 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \\"object\\" || typeof call === \\"function\\")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== \\"function\\" && superClass !== null) { throw new TypeError(\\"Super expression must either be null or a function\\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \\"object\\" || typeof call === \\"function\\")) { return call; } return _assertThisInitialized(self); }
+
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\\"this hasn't been initialised - super() hasn't been called\\"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === \\"undefined\\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \\"function\\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var MuiThemeProvider =
-/*#__PURE__*/
-function (_React$Component) {
+var MuiThemeProvider = /*#__PURE__*/function (_React$Component) {
   _inherits(MuiThemeProvider, _React$Component);
+
+  var _super = _createSuper(MuiThemeProvider);
 
   function MuiThemeProvider(props, context) {
     var _this;
 
     _classCallCheck(this, MuiThemeProvider);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(MuiThemeProvider).call(this, props, context)); // Get the outer theme from the context, can be null
+    _this = _super.call(this, props, context); // Get the outer theme from the context, can be null
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \\"broadcast\\", (0, _brcast.default)());
+    _defineProperty(_assertThisInitialized(_this), \\"broadcast\\", (0, _brcast[\\"default\\"])());
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \\"unsubscribeId\\", null);
+    _defineProperty(_assertThisInitialized(_this), \\"unsubscribeId\\", null);
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \\"outerTheme\\", null);
+    _defineProperty(_assertThisInitialized(_this), \\"outerTheme\\", null);
 
-    _this.outerTheme = _themeListener.default.initial(context); // Propagate the theme so it can be accessed by the children
+    _this.outerTheme = _themeListener[\\"default\\"].initial(context); // Propagate the theme so it can be accessed by the children
 
     _this.broadcast.setState(_this.mergeOuterLocalTheme(_this.props.theme));
 
@@ -84,7 +92,7 @@ function (_React$Component) {
       var _this2 = this;
 
       // Subscribe on the outer theme, if present
-      this.unsubscribeId = _themeListener.default.subscribe(this.context, function (outerTheme) {
+      this.unsubscribeId = _themeListener[\\"default\\"].subscribe(this.context, function (outerTheme) {
         _this2.outerTheme = outerTheme; // Forward the parent theme update to the children
 
         _this2.broadcast.setState(_this2.mergeOuterLocalTheme(_this2.props.theme));
@@ -102,7 +110,7 @@ function (_React$Component) {
     key: \\"componentWillUnmount\\",
     value: function componentWillUnmount() {
       if (this.unsubscribeId !== null) {
-        _themeListener.default.unsubscribe(this.context, this.unsubscribeId);
+        _themeListener[\\"default\\"].unsubscribe(this.context, this.unsubscribeId);
       }
     }
   }, {
@@ -118,7 +126,7 @@ function (_React$Component) {
         return localTheme;
       }
 
-      return _objectSpread({}, this.outerTheme, localTheme);
+      return _objectSpread(_objectSpread({}, this.outerTheme), localTheme);
     }
   }, {
     key: \\"render\\",
@@ -128,30 +136,30 @@ function (_React$Component) {
   }]);
 
   return MuiThemeProvider;
-}(_react.default.Component);
+}(_react[\\"default\\"].Component);
 
 MuiThemeProvider.propTypes = {
   /**
    * You can only provide a single element.
    */
-  children: _propTypes.default.element.isRequired,
+  children: _propTypes[\\"default\\"].element.isRequired,
 
   /**
    * The sheetsManager is used in order to only inject once a style sheet in a page for
    * a given theme object.
    * You should provide on the server.
    */
-  sheetsManager: _propTypes.default.object,
+  sheetsManager: _propTypes[\\"default\\"].object,
 
   /**
    * A theme object.
    */
-  theme: _propTypes.default.oneOfType([_propTypes.default.object, _propTypes.default.func]).isRequired
+  theme: _propTypes[\\"default\\"].oneOfType([_propTypes[\\"default\\"].object, _propTypes[\\"default\\"].func]).isRequired
 };
-MuiThemeProvider.childContextTypes = _objectSpread({}, _themeListener.default.contextTypes, {
-  sheetsManager: _propTypes.default.object
+MuiThemeProvider.childContextTypes = _objectSpread(_objectSpread({}, _themeListener[\\"default\\"].contextTypes), {}, {
+  sheetsManager: _propTypes[\\"default\\"].object
 });
-MuiThemeProvider.contextTypes = _themeListener.default.contextTypes;
+MuiThemeProvider.contextTypes = _themeListener[\\"default\\"].contextTypes;
 var _default = MuiThemeProvider;
-exports.default = _default;"
+exports[\\"default\\"] = _default;"
 `;

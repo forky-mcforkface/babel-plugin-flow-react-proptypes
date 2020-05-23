@@ -6,45 +6,45 @@ exports[`stateless-inline 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.default = Foo;
+exports[\\"default\\"] = Foo;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var React = require('react');
 
 function Foo(props) {
   var x = props.a_number;
-  return React.createElement(\\"div\\", null, x);
+  return /*#__PURE__*/React.createElement(\\"div\\", null, x);
 }
 
 Foo.propTypes = {
-  an_optional_string: _propTypes.default.string,
-  a_number: _propTypes.default.number.isRequired,
-  a_boolean: _propTypes.default.bool.isRequired,
-  a_generic_object: _propTypes.default.object.isRequired,
-  array_of_strings: _propTypes.default.arrayOf(_propTypes.default.string.isRequired).isRequired,
-  instance_of_Bar: function instance_of_Bar() {
-    return (typeof Bar === \\"function\\" ? _propTypes.default.instanceOf(Bar).isRequired : _propTypes.default.any.isRequired).apply(this, arguments);
+  \\"an_optional_string\\": _propTypes[\\"default\\"].string,
+  \\"a_number\\": _propTypes[\\"default\\"].number.isRequired,
+  \\"a_boolean\\": _propTypes[\\"default\\"].bool.isRequired,
+  \\"a_generic_object\\": _propTypes[\\"default\\"].object.isRequired,
+  \\"array_of_strings\\": _propTypes[\\"default\\"].arrayOf(_propTypes[\\"default\\"].string.isRequired).isRequired,
+  \\"instance_of_Bar\\": function instance_of_Bar() {
+    return (typeof Bar === \\"function\\" ? _propTypes[\\"default\\"].instanceOf(Bar).isRequired : _propTypes[\\"default\\"].any.isRequired).apply(this, arguments);
   },
-  anything: function anything(props, propName, componentName) {
+  \\"anything\\": function anything(props, propName, componentName) {
     if (!Object.prototype.hasOwnProperty.call(props, propName)) {
       throw new Error(\\"Prop \`\\".concat(propName, \\"\` has type 'any' or 'mixed', but was not provided to \`\\").concat(componentName, \\"\`. Pass undefined or any other value.\\"));
     }
   },
-  one_of: _propTypes.default.oneOf([\\"QUACK\\", \\"BARK\\", 5]).isRequired,
-  onw_of_type: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]).isRequired,
-  nested_object_level_1: _propTypes.default.shape({
-    string_property_1: _propTypes.default.string.isRequired,
-    nested_object_level_2: _propTypes.default.shape({
-      nested_object_level_3: _propTypes.default.shape({
-        string_property_3: _propTypes.default.string.isRequired
+  \\"one_of\\": _propTypes[\\"default\\"].oneOf([\\"QUACK\\", \\"BARK\\", 5]).isRequired,
+  \\"onw_of_type\\": _propTypes[\\"default\\"].oneOfType([_propTypes[\\"default\\"].number, _propTypes[\\"default\\"].string]).isRequired,
+  \\"nested_object_level_1\\": _propTypes[\\"default\\"].shape({
+    string_property_1: _propTypes[\\"default\\"].string.isRequired,
+    nested_object_level_2: _propTypes[\\"default\\"].shape({
+      nested_object_level_3: _propTypes[\\"default\\"].shape({
+        string_property_3: _propTypes[\\"default\\"].string.isRequired
       }).isRequired,
-      string_property_2: _propTypes.default.string.isRequired
+      string_property_2: _propTypes[\\"default\\"].string.isRequired
     }).isRequired
   }).isRequired,
-  should_error_if_provided: function should_error_if_provided(props, propName, componentName) {
+  \\"should_error_if_provided\\": function should_error_if_provided(props, propName, componentName) {
     if (props[propName] != null) {
       throw new Error(\\"Invalid prop \`\\".concat(propName, \\"\` of value \`\\").concat(props[propName], \\"\` passed to \`\\").concat(componentName, \\"\`. Expected undefined or null.\\"));
     }

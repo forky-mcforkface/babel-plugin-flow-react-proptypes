@@ -4,11 +4,11 @@ exports[`dead-code-string 1`] = `
 "var React = require('react');
 
 var Foo = function Foo(props) {
-  return React.createElement(\\"div\\", null);
+  return /*#__PURE__*/React.createElement(\\"div\\", null);
 };
 
 Foo.propTypes = __PROD__ ? null : {
-  x: require(\\"prop-types\\").string.isRequired
+  \\"x\\": require(\\"prop-types\\").string.isRequired
 };"
 `;
 
@@ -18,11 +18,11 @@ exports[`dead-code-string with esm 1`] = `
 "var React = require('react');
 
 var Foo = function Foo(props) {
-  return React.createElement(\\"div\\", null);
+  return /*#__PURE__*/React.createElement(\\"div\\", null);
 };
 
 Foo.propTypes = __PROD__ ? null : {
-  x: PropTypes.string.isRequired
+  \\"x\\": PropTypes.string.isRequired
 };
 import PropTypes from \\"prop-types\\";"
 `;

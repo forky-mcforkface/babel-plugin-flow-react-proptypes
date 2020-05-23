@@ -6,11 +6,11 @@ exports[`stateless-arrow-body 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.default = void 0;
+exports[\\"default\\"] = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var React = require('react');
 
@@ -19,20 +19,20 @@ var arrowFunctionWithBody = function arrowFunctionWithBody() {
 };
 
 var Foo = function Foo(props) {
-  return React.createElement(\\"div\\", null, props.x);
+  return /*#__PURE__*/React.createElement(\\"div\\", null, props.x);
 };
 
 Foo.propTypes = {
-  x: _propTypes.default.oneOf([\\"option1\\", \\"option2\\"])
+  \\"x\\": _propTypes[\\"default\\"].oneOf([\\"option1\\", \\"option2\\"])
 };
 
 var Bar = function Bar(props) {
-  return React.createElement(\\"div\\", null, props.x);
+  return /*#__PURE__*/React.createElement(\\"div\\", null, props.x);
 };
 
 Bar.propTypes = {
-  x: _propTypes.default.oneOf([\\"option1\\", \\"option2\\"])
+  \\"x\\": _propTypes[\\"default\\"].oneOf([\\"option1\\", \\"option2\\"])
 };
 var _default = Foo;
-exports.default = _default;"
+exports[\\"default\\"] = _default;"
 `;

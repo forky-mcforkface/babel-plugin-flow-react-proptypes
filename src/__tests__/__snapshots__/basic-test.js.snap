@@ -6,45 +6,47 @@ exports[`basic 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.bpfrpt_proptype_Qux = exports.default = void 0;
+exports.bpfrpt_proptype_Qux = exports[\\"default\\"] = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
 var _types = require(\\"./types\\");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
-function _typeof(obj) { if (typeof Symbol === \\"function\\" && typeof Symbol.iterator === \\"symbol\\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \\"function\\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \\"symbol\\" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { \\"@babel/helpers - typeof\\"; if (typeof Symbol === \\"function\\" && typeof Symbol.iterator === \\"symbol\\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \\"function\\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \\"symbol\\" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\\"Cannot call a class as a function\\"); } }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \\"object\\" || typeof call === \\"function\\")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== \\"function\\" && superClass !== null) { throw new TypeError(\\"Super expression must either be null or a function\\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \\"object\\" || typeof call === \\"function\\")) { return call; } return _assertThisInitialized(self); }
+
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\\"this hasn't been initialised - super() hasn't been called\\"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === \\"undefined\\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \\"function\\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var React = require('react');
 
 var bpfrpt_proptype_Qux = {
-  baz: _propTypes.default.oneOf([\\"literal\\"]).isRequired
+  \\"baz\\": _propTypes[\\"default\\"].oneOf([\\"literal\\"]).isRequired
 };
 exports.bpfrpt_proptype_Qux = bpfrpt_proptype_Qux;
 
-var Foo =
-/*#__PURE__*/
-function (_React$Component) {
+var Foo = /*#__PURE__*/function (_React$Component) {
   _inherits(Foo, _React$Component);
 
-  function Foo() {
-    var _getPrototypeOf2;
+  var _super = _createSuper(Foo);
 
+  function Foo() {
     var _this;
 
     _classCallCheck(this, Foo);
@@ -53,9 +55,9 @@ function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Foo)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), \\"props\\", void 0);
+    _defineProperty(_assertThisInitialized(_this), \\"props\\", void 0);
 
     return _this;
   }
@@ -63,53 +65,53 @@ function (_React$Component) {
   return Foo;
 }(React.Component);
 
-exports.default = Foo;
+exports[\\"default\\"] = Foo;
 
 _defineProperty(Foo, \\"propTypes\\", {
-  an_optional_string: _propTypes.default.string,
-  a_number: _propTypes.default.number.isRequired,
-  a_boolean: _propTypes.default.bool.isRequired,
-  a_generic_object: _propTypes.default.object.isRequired,
-  array_of_strings: _propTypes.default.arrayOf(_propTypes.default.string.isRequired).isRequired,
-  instance_of_Bar: function instance_of_Bar() {
-    return (typeof Bar === \\"function\\" ? _propTypes.default.instanceOf(Bar).isRequired : _propTypes.default.any.isRequired).apply(this, arguments);
+  \\"an_optional_string\\": _propTypes[\\"default\\"].string,
+  \\"a_number\\": _propTypes[\\"default\\"].number.isRequired,
+  \\"a_boolean\\": _propTypes[\\"default\\"].bool.isRequired,
+  \\"a_generic_object\\": _propTypes[\\"default\\"].object.isRequired,
+  \\"array_of_strings\\": _propTypes[\\"default\\"].arrayOf(_propTypes[\\"default\\"].string.isRequired).isRequired,
+  \\"instance_of_Bar\\": function instance_of_Bar() {
+    return (typeof Bar === \\"function\\" ? _propTypes[\\"default\\"].instanceOf(Bar).isRequired : _propTypes[\\"default\\"].any.isRequired).apply(this, arguments);
   },
-  anything: function anything(props, propName, componentName) {
+  \\"anything\\": function anything(props, propName, componentName) {
     if (!Object.prototype.hasOwnProperty.call(props, propName)) {
       throw new Error(\\"Prop \`\\".concat(propName, \\"\` has type 'any' or 'mixed', but was not provided to \`\\").concat(componentName, \\"\`. Pass undefined or any other value.\\"));
     }
   },
-  mixed: function mixed(props, propName, componentName) {
+  \\"mixed\\": function mixed(props, propName, componentName) {
     if (!Object.prototype.hasOwnProperty.call(props, propName)) {
       throw new Error(\\"Prop \`\\".concat(propName, \\"\` has type 'any' or 'mixed', but was not provided to \`\\").concat(componentName, \\"\`. Pass undefined or any other value.\\"));
     }
   },
-  one_of: _propTypes.default.oneOf([\\"QUACK\\", \\"BARK\\", 5]).isRequired,
-  one_of_type: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]).isRequired,
-  nested_object_level_1: _propTypes.default.shape({
-    string_property_1: _propTypes.default.string.isRequired,
-    nested_object_level_2: _propTypes.default.shape({
-      nested_object_level_3: _propTypes.default.shape({
-        string_property_3: _propTypes.default.string.isRequired
+  \\"one_of\\": _propTypes[\\"default\\"].oneOf([\\"QUACK\\", \\"BARK\\", 5]).isRequired,
+  \\"one_of_type\\": _propTypes[\\"default\\"].oneOfType([_propTypes[\\"default\\"].number, _propTypes[\\"default\\"].string]).isRequired,
+  \\"nested_object_level_1\\": _propTypes[\\"default\\"].shape({
+    string_property_1: _propTypes[\\"default\\"].string.isRequired,
+    nested_object_level_2: _propTypes[\\"default\\"].shape({
+      nested_object_level_3: _propTypes[\\"default\\"].shape({
+        string_property_3: _propTypes[\\"default\\"].string.isRequired
       }).isRequired,
-      string_property_2: _propTypes.default.string.isRequired
+      string_property_2: _propTypes[\\"default\\"].string.isRequired
     }).isRequired
   }).isRequired,
-  should_error_if_provided: function should_error_if_provided(props, propName, componentName) {
+  \\"should_error_if_provided\\": function should_error_if_provided(props, propName, componentName) {
     if (props[propName] != null) {
       throw new Error(\\"Invalid prop \`\\".concat(propName, \\"\` of value \`\\").concat(props[propName], \\"\` passed to \`\\").concat(componentName, \\"\`. Expected undefined or null.\\"));
     }
   },
-  intersection: _propTypes.default.shape({
-    foo: _propTypes.default.string.isRequired,
-    bar: _propTypes.default.number.isRequired,
-    baz: _propTypes.default.oneOf([\\"literal\\"]).isRequired
+  \\"intersection\\": _propTypes[\\"default\\"].shape({
+    foo: _propTypes[\\"default\\"].string.isRequired,
+    bar: _propTypes[\\"default\\"].number.isRequired,
+    baz: _propTypes[\\"default\\"].oneOf([\\"literal\\"]).isRequired
   }).isRequired,
-  some_external_type: function some_external_type() {
-    return (typeof _types.bpfrpt_proptype_SomeExternalType === \\"function\\" ? _types.bpfrpt_proptype_SomeExternalType.isRequired ? _types.bpfrpt_proptype_SomeExternalType.isRequired : _types.bpfrpt_proptype_SomeExternalType : _propTypes.default.shape(_types.bpfrpt_proptype_SomeExternalType).isRequired).apply(this, arguments);
+  \\"some_external_type\\": function some_external_type() {
+    return (typeof _types.bpfrpt_proptype_SomeExternalType === \\"function\\" ? _types.bpfrpt_proptype_SomeExternalType.isRequired ? _types.bpfrpt_proptype_SomeExternalType.isRequired : _types.bpfrpt_proptype_SomeExternalType : _propTypes[\\"default\\"].shape(_types.bpfrpt_proptype_SomeExternalType).isRequired).apply(this, arguments);
   },
-  some_external_type_intersection: _propTypes.default.shape(Object.assign({}, {
-    foo: _propTypes.default.string.isRequired
-  }, _types.bpfrpt_proptype_SomeExternalType === _propTypes.default.any ? {} : _types.bpfrpt_proptype_SomeExternalType)).isRequired
+  \\"some_external_type_intersection\\": _propTypes[\\"default\\"].shape(Object.assign({}, {
+    \\"foo\\": _propTypes[\\"default\\"].string.isRequired
+  }, _types.bpfrpt_proptype_SomeExternalType === _propTypes[\\"default\\"].any ? {} : _types.bpfrpt_proptype_SomeExternalType)).isRequired
 });"
 `;

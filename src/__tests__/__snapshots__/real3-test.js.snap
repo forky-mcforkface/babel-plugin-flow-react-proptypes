@@ -10,13 +10,13 @@ exports.bpfrpt_proptype_JobViewImpression = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var bpfrpt_proptype_JobViewImpression = {
-  resultId: _propTypes.default.string,
-  listIndex: _propTypes.default.number.isRequired,
-  searchType: _propTypes.default.string,
-  viewSource: _propTypes.default.string
+  \\"resultId\\": _propTypes[\\"default\\"].string,
+  \\"listIndex\\": _propTypes[\\"default\\"].number.isRequired,
+  \\"searchType\\": _propTypes[\\"default\\"].string,
+  \\"viewSource\\": _propTypes[\\"default\\"].string
 };
 exports.bpfrpt_proptype_JobViewImpression = bpfrpt_proptype_JobViewImpression;"
 `;

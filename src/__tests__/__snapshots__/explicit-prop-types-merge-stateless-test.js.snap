@@ -6,24 +6,23 @@ exports[`explicit-prop-types-merge-stateless-test 1`] = `
 Object.defineProperty(exports, \\"__esModule\\", {
   value: true
 });
-exports.default = void 0;
+exports[\\"default\\"] = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
 var React = require('react');
 
 var Foo = function Foo(props) {
-  return React.createElement(\\"div\\", null, props.a, props.b, props.c, props.d);
+  return /*#__PURE__*/React.createElement(\\"div\\", null, props.a, props.b, props.c, props.d);
 };
 
 Foo.propTypes = {
-  a: _propTypes.default.number.isRequired,
-  b: _propTypes.default.string,
-  c: _propTypes.default.string.isRequired,
-  d: _propTypes.default.string
+  \\"c\\": _propTypes[\\"default\\"].string.isRequired,
+  b: _propTypes[\\"default\\"].string,
+  d: _propTypes[\\"default\\"].string
 };
 var _default = Foo;
-exports.default = _default;"
+exports[\\"default\\"] = _default;"
 `;

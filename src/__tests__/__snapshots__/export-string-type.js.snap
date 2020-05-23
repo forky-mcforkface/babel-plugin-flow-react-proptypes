@@ -10,10 +10,10 @@ exports.bpfrpt_proptype_TOptional = exports.bpfrpt_proptype_T = void 0;
 
 var _propTypes = _interopRequireDefault(require(\\"prop-types\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }
 
-var bpfrpt_proptype_T = _propTypes.default.string;
+var bpfrpt_proptype_T = _propTypes[\\"default\\"].string;
 exports.bpfrpt_proptype_T = bpfrpt_proptype_T;
-var bpfrpt_proptype_TOptional = _propTypes.default.string;
+var bpfrpt_proptype_TOptional = _propTypes[\\"default\\"].string;
 exports.bpfrpt_proptype_TOptional = bpfrpt_proptype_TOptional;"
 `;

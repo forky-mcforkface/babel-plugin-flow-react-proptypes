@@ -9,25 +9,25 @@ Object.defineProperty(exports, \\"__esModule\\", {
 Object.defineProperty(exports, \\"appcache\\", {
   enumerable: true,
   get: function get() {
-    return _appcache2.default;
+    return _appcache2[\\"default\\"];
   }
 });
 Object.defineProperty(exports, \\"assets\\", {
   enumerable: true,
   get: function get() {
-    return _assets2.default;
+    return _assets2[\\"default\\"];
   }
 });
 Object.defineProperty(exports, \\"baseUrl\\", {
   enumerable: true,
   get: function get() {
-    return _baseUrl2.default;
+    return _baseUrl2[\\"default\\"];
   }
 });
 Object.defineProperty(exports, \\"production\\", {
   enumerable: true,
   get: function get() {
-    return _production2.default;
+    return _production2[\\"default\\"];
   }
 });
 
@@ -39,5 +39,5 @@ var _baseUrl2 = _interopRequireDefault(require(\\"./validators/baseUrl.js\\"));
 
 var _production2 = _interopRequireDefault(require(\\"./validators/production.js\\"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }"
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \\"default\\": obj }; }"
 `;
