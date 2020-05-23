@@ -196,7 +196,7 @@ function makeObjectAstForShape(propTypeData) {
   // but returns the AST for the object instead.
   const rootProperties = propTypeData.properties.map(({key, value, leadingComments}) => {
     const node = t.objectProperty(
-      t.identifier(key),
+      t.stringLiteral(key),
       makePropType(value)
     );
     if (leadingComments) {
@@ -326,7 +326,7 @@ function makePropType(data, isExact) {
         t.objectProperty(
           t.identifier('__exact__'),
           exactTemplate({
-            'PROPS': t.objectExpression(data.properties.map(({key}) => t.objectProperty(t.identifier(key), t.booleanLiteral(true))))
+            'PROPS': t.objectExpression(data.properties.map(({key}) => t.objectProperty(t.stringLiteral(key), t.booleanLiteral(true))))
           }).expression
         )
       );
